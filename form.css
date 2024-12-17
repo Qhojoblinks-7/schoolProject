@@ -1,0 +1,169 @@
+/* Global Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Hitmarker', sans-serif;
+}
+
+/* Body Styling */
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    background: linear-gradient(to right, rgba(28, 28, 28, 0.1), rgba(230, 25, 56, 0.1), rgba(255, 215, 0, 0.2)), url('image.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white;
+    min-height: 100vh;
+}
+
+/* Main Content Container */
+#mainContent {
+    width: 90%;
+    max-width: 1200px;
+    padding: 20px;
+    margin: auto;
+}
+
+/* Main Title Styling */
+#mainContent h1 {
+    font-family: 'Allerta Stencil', sans-serif;
+    font-size: 7rem;
+    font-weight: 700;
+    color: white;
+    text-align: center;
+    letter-spacing: 2px;
+    margin: 20px 0;
+    text-transform: uppercase;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+}
+
+/* Special Styling for "OF" in Title */
+#title {
+    font-size: 3.5rem;
+    padding: 5px 10px;
+    border-radius: 4px;
+    text-shadow: none;
+}
+
+/* Main Container for Form and Content */
+#main {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+/* Form Container */
+#form {
+    background: rgba(28, 28, 28, 0.75);
+    padding: 20px;
+    border-radius: 8px;
+    width: 100%;
+    max-width: 400px;
+    margin: auto;
+    padding: 30px;
+}
+
+/* Input and Button Styling */
+#form input, #form button {
+    width: 90%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    margin: 0% 5%;
+}
+
+#form input {
+    border: none;
+    border-bottom: 2px solid #e61938;
+    outline: none;
+    background: transparent;
+    color: white;
+}
+
+#form input::placeholder {
+    color: rgba(255, 255, 255, 0.6);
+}
+
+/* Button Styling */
+#form button {
+    background-color: #e61938;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#form button:hover {
+    background-color: #ffd700;
+}
+
+/* Form Section Headers */
+form h2 {
+    text-align: center;
+}
+
+/* Labels Styling */
+form label {
+    display: block;
+    margin-left: 30px;
+}
+
+/* Special Remember Me Styling */
+.rememberMe {
+    display: inline;
+}
+
+/* Footer Styling */
+footer {
+    background-color: black;
+    border-top: 2px solid red;
+    padding: 20px;
+    text-align: center;
+    color: white;
+    margin-top: 20px;
+    width: 100%;
+}
+
+footer ul{
+    display:flex;
+    justify-content: space-between;
+    list-style-type: none;
+    margin: 0 10%;
+}
+
+/* Responsive Design for Medium Screens */
+@media screen and (max-width: 786px) {
+    #main {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #form {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    #mainContent h1 {
+        font-size: 2.5rem;
+    }
+}
+
+/* Responsive Design for Small Screens */
+@media screen and (max-width: 480px) {
+    body {
+        font-size: 14px;
+    }
+
+    #mainContent h1 {
+        font-size: 2rem;
+    }
+
+    #form input, #form button {
+        width: 100%;
+    }
+}
